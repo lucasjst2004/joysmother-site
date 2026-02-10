@@ -8,7 +8,7 @@ body {
 
 header {
   text-align: center;
-  color: red;   /* texto do cabeçalho em vermelho */
+  color: red;   /* texto em vermelho */
   padding: 20px;
   background: none;
 }
@@ -18,10 +18,10 @@ header h1, header p {
 }
 
 .banner {
-  width: 300px;   /* reduz o tamanho da imagem principal */
-  height: auto;   /* mantém proporção */
+  width: 250px;   /* reduz ainda mais o tamanho da imagem */
+  height: auto;
   display: block;
-  margin: 0 auto; /* centraliza */
+  margin: 0 auto;
 }
 
 button {
