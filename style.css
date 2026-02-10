@@ -8,13 +8,13 @@ body {
 
 header {
   text-align: center;
-  color: red;   /* texto em vermelho */
+  color: red;
   padding: 20px;
   background: none;
 }
 
 header h1, header p {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* sombra para destacar no fundo escuro */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 .telefone {
@@ -23,10 +23,34 @@ header h1, header p {
 }
 
 .banner {
-  width: 250px;   /* tamanho menor para ficar proporcional */
+  width: 250px;   /* tamanho padrão para PC */
   height: auto;
   display: block;
-  margin: 0 auto 15px auto; /* centraliza e dá espaço abaixo */
+  margin: 0 auto 15px auto;
+}
+
+/* Responsividade para celular */
+@media (max-width: 600px) {
+  .banner {
+    width: 180px;   /* reduz o banner em telas pequenas */
+  }
+
+  header h1 {
+    font-size: 24px; /* título menor no celular */
+  }
+
+  header p {
+    font-size: 16px; /* textos menores */
+  }
+
+  .telefone {
+    font-size: 18px;
+  }
+
+  button {
+    width: 90%;   /* botão ocupa quase toda a largura no celular */
+    font-size: 14px;
+  }
 }
 
 button {
