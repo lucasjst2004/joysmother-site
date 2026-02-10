@@ -14,14 +14,19 @@ header {
 }
 
 header h1, header p {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* sombra para legibilidade */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* sombra para destacar no fundo escuro */
+}
+
+.telefone {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .banner {
-  width: 250px;   /* reduz ainda mais o tamanho da imagem */
+  width: 250px;   /* tamanho menor para ficar proporcional */
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 15px auto; /* centraliza e dá espaço abaixo */
 }
 
 button {
