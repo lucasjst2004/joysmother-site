@@ -1,38 +1,17 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joysmother - Assistência Técnica</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    header {
-      background-image: url("fundo.jpg"); /* coloque aqui o nome da sua imagem */
-      background-size: cover;             /* ajusta para cobrir todo o espaço */
-      background-position: center;        /* centraliza a imagem */
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-
-    .banner {
-      width: 400px;
-      display: block;
-      margin: 0 auto 20px auto;
-    }
-
-    .social {
-      font-size: 18px;
-      font-weight: bold;
-      color: #ff0000;
-      margin-top: 10px;
-    }
-  </style>
+  <!-- Link do Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
     <img src="banner.png" alt="Banner Joysmother" class="banner">
-    <h1>Assistência Técnica Joysmother</h1>
+    <h1>JOYSMOTHER</h1>
+    <p class="telefone">(62) 98151-4674</p>
+    <p>Assistência Técnica Joysmother</p>
     <p>Seu computador e seu notebook como novos</p>
     <p class="social">@joysmother</p>
   </header>
@@ -42,12 +21,61 @@
       <h2>Fale conosco</h2>
       <button onclick="abrirWhatsApp()">WhatsApp: (62) 98151-4674</button>
     </section>
+
+    <!-- Seção de serviços -->
+    <section id="servicos">
+      <h2>Nossos Serviços</h2>
+      
+      <div class="servico">
+        <a href="https://wa.me/5562981514674?text=Quero%20saber%20mais%20sobre%20Formatação%20e%20Otimização" target="_blank">
+          <i class="fas fa-sync-alt"></i>
+          <h3>Formatação e Otimização</h3>
+          <p>Deixe seu computador rodando como novo. Fazemos limpeza completa do sistema, instalação de drivers e softwares essenciais, além de ajustes para garantir máximo desempenho.</p>
+        </a>
+      </div>
+      
+      <div class="servico">
+        <a href="https://wa.me/5562981514674?text=Quero%20saber%20mais%20sobre%20Upgrades%20de%20Hardware" target="_blank">
+          <i class="fas fa-memory"></i>
+          <h3>Upgrades de Hardware</h3>
+          <p>Quer mais velocidade ou potência? Instalamos e configuramos SSDs, memórias RAM, placas de vídeo e outros componentes. Também oferecemos consultoria para escolher peças compatíveis e testes de estabilidade.</p>
+        </a>
+      </div>
+      
+      <div class="servico">
+        <a href="https://wa.me/5562981514674?text=Quero%20saber%20mais%20sobre%20Manutenção%20Preventiva" target="_blank">
+          <i class="fas fa-tools"></i>
+          <h3>Manutenção Preventiva</h3>
+          <p>Evite problemas antes que eles aconteçam. Realizamos limpeza interna, troca de pasta térmica, verificação de temperatura e diagnóstico antecipado de falhas.</p>
+        </a>
+      </div>
+      
+      <div class="servico">
+        <a href="https://wa.me/5562981514674?text=Quero%20saber%20mais%20sobre%20Suporte%20Técnico%20Rápido" target="_blank">
+          <i class="fas fa-headset"></i>
+          <h3>Suporte Técnico Rápido</h3>
+          <p>Atendimento ágil via WhatsApp, com orçamento sem compromisso. Também oferecemos retirada e entrega de equipamentos (consulte disponibilidade).</p>
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Joysmother - Assistência Técnica</p>
+    <p>
+      <a href="https://www.instagram.com/joysmonther?igsh=Ymt3cTFvZ2piamxw" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a> |
+      <a href="https://www.facebook.com/61586258737075/posts/122100571851208624/?mibextid=rS40aB7S9Ucbxw6v" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+    </p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function abrirWhatsApp() {
+      window.open("https://wa.me/5562981514674", "_blank");
+    }
+  </script>
 </body>
 </html>
