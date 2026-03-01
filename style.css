@@ -88,3 +88,47 @@ footer a:hover {
 footer i {
   margin-right: 5px;
 }
+
+/* ---- Seção de Serviços em formato de cards ---- */
+#servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px;
+}
+
+.servico {
+  background-color: #ddcaca;
+  border: 2px solid #00cc99;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.servico h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.servico p {
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
+
+.servico a {
+  text-decoration: none;
+  color: #00cc99;
+  font-weight: bold;
+}
+
+.servico:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 204, 153, 0.3);
+  background-color: #c41a3f;
+}
+
+#servicos h2 {
+  text-align: center;
+  color: #00cc99;
+  margin-bottom: 20px;
+}
